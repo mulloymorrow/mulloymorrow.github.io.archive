@@ -4,3 +4,8 @@ mulloymorrow.github.io.iml
 .sass-cache
 _deploy
 .pygments-cache
+.idea/misc.xml
+
+.idea/modules.xml
+
+.idea/workspace.xml

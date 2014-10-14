@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: 
-
-Sitemap: http://mulloymorrow.github.io/sitemap.xml 

@@ -26,8 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="629cea2d-4432-4f3c-8d60-e2fe3e578791" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/source/stylesheets/screen.css" afterPath="$PROJECT_DIR$/source/stylesheets/screen.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/atom.xml" afterPath="$PROJECT_DIR$/public/atom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/screen.css" afterPath="$PROJECT_DIR$/public/stylesheets/screen.css" />
     </list>
@@ -106,6 +106,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -116,7 +117,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -527,7 +527,8 @@
       <updated>1413246756954</updated>
       <workItem from="1413246757929" duration="225000" />
       <workItem from="1413248150209" duration="1915000" />
-      <workItem from="1413250957679" duration="8000" />
+      <workItem from="1413250957679" duration="89000" />
+      <workItem from="1413251079273" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="Hello world">
       <created>1413246881689</created>
@@ -561,7 +562,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2148000" />
+    <option name="totallyTimeSpent" value="2241000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="6" />

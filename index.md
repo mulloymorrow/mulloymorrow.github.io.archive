@@ -7,7 +7,7 @@ splash: true
 
 -------------
 
-Mulloy Says something here
+Bloggin it up on Data Science, Machine Learning, and Engineering.
 
 -------------
 

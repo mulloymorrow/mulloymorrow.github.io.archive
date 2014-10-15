@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% capture include_to_markdownify %}
+{% include post_header.md %}
+{% endcapture %}
+{{ include_to_markdownify | markdownify }}
+<br/>
+{{ content }}

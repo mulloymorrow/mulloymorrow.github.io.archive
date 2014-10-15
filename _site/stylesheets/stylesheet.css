@@ -1,0 +1,47 @@
+.tesselations {
+  height: 206px;
+  background-image: url('/images/streogram.gif');
+}
+
+code.has-jax {
+	font: inherit; 
+	font-size: 100%; 
+	background: inherit; 
+	border: inherit;
+}
+
+body {
+	font-family: 'Whitney SSm 4r', 'Whitney SSm A', 'Whitney SSm B', sans-serif; 
+	font-weight: 400; 
+	font-style: normal;
+}
+
+h1 {
+  font-family: 'Gotham 3r', 'Gotham A', 'Gotham B', sans-serif; 
+  font-weight: 300; 
+  font-style: normal;
+  font-size: 32px;
+  letter-spacing: -0.02em;
+  line-height: 44px;
+  margin: 20px 0;
+}
+
+p, li {
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+hr {
+	border: 0;
+	height: 0;
+	border-top: 1px solid rgb(200,200,200);
+}
+
+.posts-list > li > a {
+	display: block;
+}
+.post-meta {
+	display: block;
+	color: #84888b;
+	font-size: 12px;
+}

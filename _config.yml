@@ -1,0 +1,9 @@
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      title: dward.io
+      splash: true
+      layout: default
+      indent: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"

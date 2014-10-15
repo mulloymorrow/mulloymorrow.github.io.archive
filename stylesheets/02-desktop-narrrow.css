@@ -1,0 +1,623 @@
+/* -----------------------------------------------------------------------------
+* THE RESPONSIVE PAGE GUIDES
+--------------------------------------------------------------------------------
+*/
+#guide-button {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    #guide-button {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2000;
+    }
+}
+
+#guides {
+    display: none;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    #guides {
+        width: 744px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    #guides {
+        width: 960px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    #guides {
+        width: 1200px;
+    }
+}
+
+#guides-inner {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.guide {
+    float: left;
+    height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .guide {
+        background: rgba(255, 0, 0, 0.3);
+        float: left;
+        height: 1000px;
+        margin: 0 10px;
+        width: 42px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .guide {
+        background: rgba(0, 255, 0, 0.3);
+        margin: 0 10px;
+        width: 60px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .guide {
+        background: rgba(0, 0, 255, 0.3);
+        margin: 0 15px;
+        width: 70px;
+    }
+}
+
+.guide-visibile {
+    display: block !important;
+}
+
+/* -----------------------------------------------------------------------------
+* THE RESPONSIVE GRID, AS APPLIED TO NARROW DESKTOPS
+--------------------------------------------------------------------------------
+*/
+.zone {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.region {
+    float: left;
+}
+
+.one-wide {
+    width: 42px;
+}
+
+.one-before {
+    margin-left: 62px;
+}
+
+.one-after {
+    margin-right: 62px;
+}
+
+.region.one-before {
+    margin-left: 72px;
+}
+
+.region.one-after {
+    margin-right: 72px;
+}
+
+.two-wide {
+    width: 104px;
+}
+
+.two-before {
+    margin-left: 124px;
+}
+
+.two-after {
+    margin-right: 124px;
+}
+
+.region.two-before {
+    margin-left: 134px;
+}
+
+.region.two-after {
+    margin-right: 134px;
+}
+
+.three-wide {
+    width: 166px;
+}
+
+.three-before {
+    margin-left: 186px;
+}
+
+.three-after {
+    margin-right: 186px;
+}
+
+.region.three-before {
+    margin-left: 196px;
+}
+
+.region.three-after {
+    margin-right: 196px;
+}
+
+.four-wide {
+    width: 228px;
+}
+
+.four-before {
+    margin-left: 248px;
+}
+
+.four-after {
+    margin-right: 248px;
+}
+
+.region.four-before {
+    margin-left: 258px;
+}
+
+.region.four-after {
+    margin-right: 258px;
+}
+
+.five-wide {
+    width: 290px;
+}
+
+.five-before {
+    margin-left: 310px;
+}
+
+.five-after {
+    margin-right: 310px;
+}
+
+.region.five-before {
+    margin-left: 320px;
+}
+
+.region-five-after {
+    margin-right: 320px;
+}
+
+.six-wide {
+    width: 352px;
+}
+
+.six-before {
+    margin-left: 372px;
+}
+
+.six-after {
+    margin-right: 372px;
+}
+
+.region.six-before {
+    margin-left: 382px;
+}
+
+.region.six-after {
+    margin-right: 382px;
+}
+
+.seven-wide {
+    width: 414px;
+}
+
+.seven-before {
+    margin-left: 434px;
+}
+
+.seven-after {
+    margin-right: 434px;
+}
+
+.region.seven-before {
+    margin-left: 444px;
+}
+
+.region.seven-after {
+    margin-right: 444px;
+}
+
+.eight-wide {
+    width: 476px;
+}
+
+.eight-before {
+    margin-left: 496px;
+}
+
+.eight-after {
+    margin-right: 496px;
+}
+
+.region.eight-before {
+    margin-left: 506px;
+}
+
+.region.eight-after {
+    margin-right: 506px;
+}
+
+.nine-wide {
+    width: 538px;
+}
+
+.nine-before {
+    margin-left: 558px;
+}
+
+.nine-after {
+    margin-right: 558px;
+}
+
+.region.nine-before {
+    margin-left: 568px;
+}
+
+.region.nine-after {
+    margin-right: 568px;
+}
+
+.ten-wide {
+    width: 600px;
+}
+
+.ten-before {
+    margin-left: 620px;
+}
+
+.ten-after {
+    margin-right: 620px;
+}
+
+.region.ten-before {
+    margin-left: 630px;
+}
+
+.region.ten-after {
+    margin-right: 630px;
+}
+
+.eleven-wide {
+    width: 662px;
+}
+
+.eleven-before {
+    margin-left: 682px;
+}
+
+.eleven-after {
+    margin-right: 682px;
+}
+
+.region.eleven-before {
+    margin-left: 692px;
+}
+
+.region.eleven-after {
+    margin-right: 692px;
+}
+
+.twelve-wide {
+    width: 724px;
+}
+
+.guide-visible {
+    display: block !important;
+}
+
+/* =====================================================================================
+THE HEADER
+====================================================================================== */
+#menu-mobile {
+    display: none;
+}
+
+#main-menu, #secondary-menu {
+    display: block;
+}
+
+#logo-space {
+    padding-left: 0;
+}
+
+/* =====================================================================================
+THE OVERVIEW PAGE
+====================================================================================== */
+#our-story {
+    position: relative;
+}
+#our-story img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+#zone-pros-wrapper {
+    background-image: url("http://about.porch.com/about/img/bryan-northrop-desktop-fade.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 500px;
+    overflow: hidden;
+}
+@media only screen and (min-width: 1221px) {
+    #zone-pros-wrapper {
+        background-image: url("http://about.porch.com/about/img/bryan-northrop-wide.jpg");
+        background-size: cover;
+    }
+}
+
+#pros img {
+    margin-bottom: 0;
+}
+
+#zone-discover-wrapper {
+    overflow: hidden;
+}
+#zone-discover-wrapper .zone {
+    position: relative;
+}
+#zone-discover-wrapper .zone #discover img {
+    margin-bottom: 0;
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+@media only screen and (min-width: 1221px) {
+    #zone-discover-wrapper .zone #discover img {
+        left: 15px;
+    }
+}
+
+#zone-claim-wrapper {
+    overflow: hidden;
+}
+
+#zone-claim {
+    position: relative;
+}
+#zone-claim #claim img {
+    position: absolute;
+    right: 445px;
+    top: 0;
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    #zone-claim #claim img {
+        right: 570px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    #zone-claim #claim img {
+        right: 715px;
+    }
+}
+
+/* =====================================================================================
+THE 'WHO WE ARE' PAGE
+====================================================================================== */
+#grid-intro .what-we-do-headline {
+    padding-top: 65px;
+    position: relative;
+}
+#grid-intro .what-we-do-headline:after {
+    background: url("http://about.porch.com/about/img/bracket.png");
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 271px;
+    position: absolute;
+    right: -62px;
+    top: 10px;
+    width: 61px;
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    #grid-intro .what-we-do-headline:after {
+        right: -80px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    #grid-intro .what-we-do-headline:after {
+        right: -100px;
+    }
+}
+#grid-intro .what-we-do-headline li {
+    margin: 5px 0;
+}
+#grid-intro #what-we-do {
+    /*
+    padding-top: 5px;
+    @include responsive(normal) {
+        padding-top: 40px;
+    }
+    @include responsive(wide) {
+        padding-top: 40px;
+    }*/
+}
+#grid-intro #what-we-do:before {
+    display: none;
+}
+#grid-intro #what-we-do li {
+    margin: 5px 0;
+}
+
+/* =====================================================================================
+THE CAREERS PAGE
+====================================================================================== */
+.context-about-careers #summary {
+    position: relative;
+}
+.context-about-careers #summary img {
+    position: absolute;
+    top: 0;
+}
+
+#benefits {
+    margin: 0 -10px 0 -10px;
+}
+@media only screen and (min-width: 1221px) {
+    #benefits {
+        margin: 0 -15px 0 -15px;
+    }
+}
+#benefits li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 16px;
+    max-width: 100%;
+    vertical-align: top;
+    width: 292px;
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    #benefits li {
+        width: 400px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    #benefits li {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: 510px;
+    }
+}
+
+/* =====================================================================================
+THE 'IN THE NEWS' PAGE
+====================================================================================== */
+#news-blurbs {
+    border: none;
+}
+#news-blurbs .news-blurb {
+    min-height: 100px;
+    position: relative;
+}
+#news-blurbs .news-blurb .logo-date {
+    position: absolute;
+    top: 0;
+}
+#news-blurbs .news-blurb .logo-date img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+}
+#news-blurbs .news-blurb .logo-date .dateline {
+    padding-left: 0;
+    text-align: center;
+}
+#news-blurbs .news-blurb .headline {
+    border-left: 2px solid #D1D4D3;
+    min-height: 100px;
+}
+#news-blurbs .news-blurb .headline h5 {
+    margin-bottom: 0;
+    padding-bottom: 0px;
+}
+
+/* =====================================================================================
+THE PRESS PAGE
+====================================================================================== */
+#region-by-the-numbers {
+    background: #f6f6f6;
+    margin: 0;
+}
+#region-by-the-numbers .region-inner {
+    padding: 20px;
+}
+
+#by-the-numbers h6 {
+    margin: 0;
+}
+
+#releases .release {
+    position: relative;
+}
+#releases .release .date {
+    position: absolute;
+    top: 3px;
+}
+#releases .release .date .dateline {
+    margin: 0;
+    text-align: right;
+}
+
+#assets .grid-section .cell {
+    margin-bottom: 0;
+}
+
+#bios .bio {
+    padding-bottom: 60px;
+    padding-left: inherit;
+}
+#bios .bio img {
+    width: 104px;
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    #bios .bio img {
+        width: 140px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    #bios .bio img {
+        width: 170px;
+    }
+}
+#bios .bio .bio-links {
+    margin-bottom: 0;
+}
+
+/* =====================================================================================
+THE CUSTOMERS PAGE
+====================================================================================== */
+#case-studies-video > div {
+    float: left;
+}
+
+#case-studies-video .headline {
+    margin-left: 20px;
+}
+@media only screen and (min-width: 1221px) {
+    #case-studies-video .headline {
+        margin-left: 30px;
+    }
+}
+
+h2.case-studies-video {
+    margin-bottom: 40px;
+}
+
+/* -----------------------------------------------------------------------------
+* EASY USER STYLE CLASSES
+--------------------------------------------------------------------------------
+*/
+.gray-background {
+    background: #f6f6f6;
+}
+
+.yellow-background {
+    background: #FFE692;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}

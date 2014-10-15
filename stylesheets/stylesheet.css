@@ -45,3 +45,6 @@ hr {
 	color: #84888b;
 	font-size: 12px;
 }
+#social-footer ul li.first {
+    background-image: url("/images/GitHub-Mark-32px.png");
+}

@@ -1,0 +1,227 @@
+/* -----------------------------------------------------------------------------
+* THE RESPONSIVE GRID, AS APPLIED TO STANDARD DESKTOPS
+--------------------------------------------------------------------------------
+*/
+.one-wide {
+    width: 60px;
+}
+
+.one-before {
+    margin-left: 80px;
+}
+
+.one-after {
+    margin-right: 80px;
+}
+
+.region.one-before {
+    margin-left: 90px;
+}
+
+.region.one-after {
+    margin-right: 90px;
+}
+
+.two-wide {
+    width: 140px;
+}
+
+.two-before {
+    margin-left: 160px;
+}
+
+.two-after {
+    margin-right: 160px;
+}
+
+.region.two-before {
+    margin-left: 170px;
+}
+
+.region.two-after {
+    margin-right: 170px;
+}
+
+.three-wide {
+    width: 220px;
+}
+
+.three-before {
+    margin-left: 240px;
+}
+
+.three-after {
+    margin-right: 240px;
+}
+
+.region.three-before {
+    margin-left: 250px;
+}
+
+.region.three-after {
+    margin-right: 250px;
+}
+
+.four-wide {
+    width: 300px;
+}
+
+.four-before {
+    margin-left: 320px;
+}
+
+.four-after {
+    margin-right: 320px;
+}
+
+.region.four-before {
+    margin-left: 330px;
+}
+
+.region.four-after {
+    margin-right: 330px;
+}
+
+.five-wide {
+    width: 380px;
+}
+
+.five-before {
+    margin-left: 400px;
+}
+
+.five-afer {
+    margin-right: 400px;
+}
+
+.region.five-before {
+    margin-left: 410px;
+}
+
+.region.five-after {
+    margin-right: 410px;
+}
+
+.six-wide {
+    width: 460px;
+}
+
+.six-before {
+    margin-left: 480px;
+}
+
+.six-after {
+    margin-right: 480px;
+}
+
+.region.six-before {
+    margin-left: 490px;
+}
+
+.region.six-after {
+    margin-right: 490px;
+}
+
+.seven-wide {
+    width: 540px;
+}
+
+.seven-before {
+    margin-left: 560px;
+}
+
+.seven-after {
+    margin-right: 560px;
+}
+
+.region.seven-before {
+    margin-left: 570px;
+}
+
+.region.seven-after {
+    margin-right: 570px;
+}
+
+.eight-wide {
+    width: 620px;
+}
+
+.eight-before {
+    margin-left: 640px;
+}
+
+.eight-after {
+    margin-right: 640px;
+}
+
+.region.eight-before {
+    margin-left: 650px;
+}
+
+.region.eight-after {
+    margin-right: 650px;
+}
+
+.nine-wide {
+    width: 700px;
+}
+
+.nine-before {
+    margin-left: 720px;
+}
+
+.nine-after {
+    margin-right: 720px;
+}
+
+.region.nine-before {
+    margin-left: 730px;
+}
+
+.region.nine-after {
+    margin-right: 730px;
+}
+
+.ten-wide {
+    width: 780px;
+}
+
+.ten-before {
+    margin-left: 800px;
+}
+
+.ten-after {
+    margin-right: 800px;
+}
+
+.region.ten-before {
+    margin-left: 810px;
+}
+
+.region.ten-after {
+    margin-right: 810px;
+}
+
+.eleven-wide {
+    width: 860px;
+}
+
+.eleven-before {
+    margin-left: 880px;
+}
+
+.eleven-after {
+    margin-right: 880px;
+}
+
+.region.eleven-before {
+    margin-left: 890px;
+}
+
+.region.eleven-after {
+    margin-right: 890px;
+}
+
+.twelve-wide {
+    width: 940px;
+}

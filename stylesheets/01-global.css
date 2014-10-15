@@ -1,0 +1,2118 @@
+@charset "UTF-8";
+/* -----------------------------------------------------------------------------
+* ERIC MEYER'S RESET CSS V2.0 (http://meyerweb.com/eric/tools/css/reset/)
+* http://cssreset.com
+--------------------------------------------------------------------------------
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    /* prevent font scaling in landscape */
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ==============================================================================
+A MIXIN THAT HANDLES THE BASIC RESPONSIVE STRUCTURE
+================================================================================*/
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .zone {
+        width: 744px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .zone {
+        width: 960px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .zone {
+        width: 1200px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .region {
+        float: left;
+        margin: 0 10px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .region {
+        margin: 0 10px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .region {
+        margin: 0 15px;
+    }
+}
+
+/* -----------------------------------------------------------------------------
+* THE COLOR PALETTE FOR THIS PROJECT
+--------------------------------------------------------------------------------
+*/
+/*
+#palette {
+	padding: 20px;
+	.sample {
+		margin: 20px 0;
+		&.text {
+			background: $color-text;
+		}
+		&.link {
+			background: $color-link;
+		}
+		&.hover {
+			background: $color-hover;
+		}
+		&.bg {
+			background: $color-bg;
+		}
+		&.accent {
+			background: $color-accent;
+		}
+		.sample-label {
+			background: white;
+			border: 1px solid #dfdfdf;
+			padding: 35px 10px;
+			width: 15%;
+		}
+	}
+}*/
+/* -----------------------------------------------------------------------------
+* THE RESPONSIVE PAGE GUIDES
+--------------------------------------------------------------------------------
+*/
+#guide-button {
+    display: none;
+}
+@media only screen and (min-width: 768px) {
+    #guide-button {
+        display: block;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 2000;
+    }
+}
+
+#guides {
+    display: none;
+    margin: 0 auto;
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    #guides {
+        width: 744px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    #guides {
+        width: 960px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    #guides {
+        width: 1200px;
+    }
+}
+
+#guides-inner {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.guide {
+    float: left;
+    height: 100%;
+}
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .guide {
+        background: rgba(255, 0, 0, 0.3);
+        float: left;
+        height: 1000px;
+        margin: 0 10px;
+        width: 42px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .guide {
+        background: rgba(0, 255, 0, 0.3);
+        margin: 0 10px;
+        width: 60px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .guide {
+        background: rgba(0, 0, 255, 0.3);
+        margin: 0 15px;
+        width: 70px;
+    }
+}
+
+.guide-visibile {
+    display: block !important;
+}
+
+/* -----------------------------------------------------------------------------
+* THE GRID OUTPUT, ACROSS RESPONSIVE SIZES
+--------------------------------------------------------------------------------
+*/
+@media only screen and (min-width: 768px) {
+    .two-column-grid,
+    .three-column-grid,
+    .four-column-grid,
+    .five-column-grid,
+    .six-column-grid,
+    .seven-column-grid,
+    .eight-column-grid,
+    .nine-column-grid,
+    .ten-column-grid,
+    .eleven-column-grid,
+    .twelve-column-grid {
+        margin: 0 -10px 0 -10px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .two-column-grid,
+    .three-column-grid,
+    .four-column-grid,
+    .five-column-grid,
+    .six-column-grid,
+    .seven-column-grid,
+    .eight-column-grid,
+    .nine-column-grid,
+    .ten-column-grid,
+    .eleven-column-grid,
+    .twelve-column-grid {
+        margin: 0 -15px 0 -15px;
+    }
+}
+
+.mobile-two-column-grid .cell, .mobile-three-column-grid .cell {
+    display: inline-block;
+    float: left;
+}
+
+.cell {
+    display: block;
+    margin-bottom: 16px;
+    max-width: 100%;
+    vertical-align: top;
+}
+.mobile-two-column-grid .cell {
+    margin-right: 2%;
+    width: 49%;
+}
+.mobile-two-column-grid .cell:nth-child(2n+2) {
+    margin-right: 0;
+}
+.mobile-three-column-grid .cell {
+    margin-right: 2%;
+    width: 32%;
+}
+.mobile-three-column-grid .cell:nth-child(3n+3) {
+    margin-right: 0;
+}
+@media only screen and (min-width: 768px) {
+    .cell {
+        display: inline-block;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        margin-bottom: 32px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .cell {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .region.two-wide .two-column-grid .cell, .region.three-wide .three-column-grid .cell, .region.four-wide .four-column-grid .cell, .region.five-wide .five-column-grid .cell, .region.six-wide .six-column-grid .cell, .region.seven-wide .seven-column-grid .cell, .region.eight-wide .eight-column-grid .cell, .region.nine-wide .nine-column-grid .cell, .region.ten-wide .ten-column-grid .cell, .region.eleven-wide .eleven-column-grid .cell, .region.twelve-wide .twelve-column-grid .cell {
+        width: 42px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .region.two-wide .two-column-grid .cell, .region.three-wide .three-column-grid .cell, .region.four-wide .four-column-grid .cell, .region.five-wide .five-column-grid .cell, .region.six-wide .six-column-grid .cell, .region.seven-wide .seven-column-grid .cell, .region.eight-wide .eight-column-grid .cell, .region.nine-wide .nine-column-grid .cell, .region.ten-wide .ten-column-grid .cell, .region.eleven-wide .eleven-column-grid .cell, .region.twelve-wide .twelve-column-grid .cell {
+        width: 60px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .region.two-wide .two-column-grid .cell, .region.three-wide .three-column-grid .cell, .region.four-wide .four-column-grid .cell, .region.five-wide .five-column-grid .cell, .region.six-wide .six-column-grid .cell, .region.seven-wide .seven-column-grid .cell, .region.eight-wide .eight-column-grid .cell, .region.nine-wide .nine-column-grid .cell, .region.ten-wide .ten-column-grid .cell, .region.eleven-wide .eleven-column-grid .cell, .region.twelve-wide .twelve-column-grid .cell {
+        width: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .region.four-wide .two-column-grid .cell, .region.six-wide .three-column-grid .cell, .region.eight-wide .four-column-grid .cell, .region.ten-wide .five-column-grid .cell, .region.twelve-wide .six-column-grid .cell {
+        width: 104px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .region.four-wide .two-column-grid .cell, .region.six-wide .three-column-grid .cell, .region.eight-wide .four-column-grid .cell, .region.ten-wide .five-column-grid .cell, .region.twelve-wide .six-column-grid .cell {
+        width: 140px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .region.four-wide .two-column-grid .cell, .region.six-wide .three-column-grid .cell, .region.eight-wide .four-column-grid .cell, .region.ten-wide .five-column-grid .cell, .region.twelve-wide .six-column-grid .cell {
+        width: 170px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .region.six-wide .two-column-grid .cell, .region.nine-wide .three-column-grid .cell, .region.twelve-wide .four-column-grid .cell {
+        width: 166px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .region.six-wide .two-column-grid .cell, .region.nine-wide .three-column-grid .cell, .region.twelve-wide .four-column-grid .cell {
+        width: 220px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .region.six-wide .two-column-grid .cell, .region.nine-wide .three-column-grid .cell, .region.twelve-wide .four-column-grid .cell {
+        width: 270px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .region.eight-wide .two-column-grid .cell, .region.twelve-wide .three-column-grid .cell {
+        width: 228px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .region.eight-wide .two-column-grid .cell, .region.twelve-wide .three-column-grid .cell {
+        width: 300px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .region.eight-wide .two-column-grid .cell, .region.twelve-wide .three-column-grid .cell {
+        width: 370px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .region.ten-wide .two-column-grid .cell {
+        width: 290px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .region.ten-wide .two-column-grid .cell {
+        width: 380px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .region.ten-wide .two-column-grid .cell {
+        width: 470px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .region.twelve-wide .two-column-grid .cell {
+        width: 352px;
+    }
+}
+@media only screen and (min-width: 981px) and (max-width: 1220px) {
+    .region.twelve-wide .two-column-grid .cell {
+        width: 460px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .region.twelve-wide .two-column-grid .cell {
+        width: 570px;
+    }
+}
+
+/* =====================================================================================
+BASIC BITS - 00.basicbits.scss
+====================================================================================== */
+body {
+    color: #575757;
+    font-family: 'Verlag 3r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #3878d8;
+    text-decoration: none;
+}
+
+.video-wrapper {
+    height: 0;
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+}
+@media only screen and (min-width: 768px) {
+    .video-wrapper {
+        margin: 0;
+    }
+}
+.video-wrapper iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.context-case-studies .video-wrapper {
+    margin: 40px 0;
+}
+
+/* =====================================================================================
+TEXT
+====================================================================================== */
+h2 {
+    color: #f2ae00;
+    font-family: 'Verlag 2r','Verlag A','Verlag B', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 36px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+.top-banner h2 {
+    color: white;
+}
+@media only screen and (min-width: 768px) {
+    .top-banner h2 {
+        margin-top: 10%;
+    }
+}
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+}
+
+h3 {
+    color: #84888b;
+    font-family: 'Archer 5r','Archer A','Archer B', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+.top-banner h3 {
+    color: white;
+}
+@media only screen and (min-width: 768px) {
+    h3 {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+}
+
+h4 {
+    color: #3878d8;
+    font-family: 'Verlag 3r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+h5 {
+    color: #84888b;
+    font-family: 'Archer 5r','Archer A','Archer B', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h6 {
+    color: #42acb4;
+    font-family: 'Verlag 4','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 40px 0;
+}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.3;
+    margin: 20px 0;
+}
+
+b, strong {
+    font-family: 'Verlag 7r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#quote p {
+    color: #b3b3b3;
+    font-family: 'Verlag 4i','Verlag A','Verlag B', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* =====================================================================================
+ZONES, PADDING, AND STRUCTURE
+====================================================================================== */
+.zone-wrapper {
+    padding: 40px 0;
+}
+@media only screen and (min-width: 768px) {
+    .zone-wrapper {
+        padding: 60px 0;
+    }
+}
+.zone-wrapper .zone {
+    padding: 0 10px;
+}
+@media only screen and (min-width: 768px) {
+    .zone-wrapper .zone {
+        padding: 0;
+    }
+}
+
+.top-banner {
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-bottom: 0px;
+    position: relative;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .top-banner {
+        background-size: 100% auto;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .top-banner {
+        background-position: center;
+        background-size: auto;
+        height: 400px;
+        padding-bottom: 40px;
+        padding-top: 100px;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .top-banner {
+        background-size: cover;
+    }
+}
+.context-about-overview .top-banner {
+    margin-bottom: 20px;
+    /*&:after {
+        background: url('/about/img/seattle-circle.png');
+        background-repeat: no-repeat;
+        bottom: -51px;
+        content: '';
+        height: 102px;
+        left: 50%;
+        margin-left: -51px;
+        position: absolute;
+        width: 102px;
+    }*/
+}
+
+@media only screen and (min-width: 768px) {
+    .tuck-under {
+        margin-top: -50px;
+    }
+}
+
+/* =====================================================================================
+THE HEADER - _header.scss
+====================================================================================== */
+#zone-header-wrapper {
+    border-bottom: 1px solid #d2d2d2;
+    padding: 0;
+}
+
+.zone-header {
+    padding: 0 !important;
+}
+@media only screen and (min-width: 768px) {
+    .zone-header {
+        padding: 0 10px !important;
+    }
+}
+
+#region-logo {
+    position: relative;
+}
+
+#logo-space {
+    background: white;
+    /*display: inline-block;*/
+    float: left;
+    height: 25px;
+    /*padding-left: 10px;*/
+    margin-right: 45px;
+    padding: 12px 0 13px 10px;
+    /*z-index: 5;*/
+    /*@include responsive(all-desktops) {
+        float: left;
+        width: auto;
+        z-index: auto;
+    }*/
+}
+#logo-space img {
+    height: 25px;
+    width: auto;
+}
+@media only screen and (min-width: 768px) {
+    #logo-space {
+        padding-left: 0;
+    }
+}
+
+/*#main-menu, #secondary-menu {
+	display: none;
+}*/
+/* ------------------------ the mobile menu ---------------------------------------- */
+.no-js .navbar-toggle {
+    display: none;
+}
+
+.navbar-toggle {
+    border: 1px solid #d2d2d2;
+    -webkit-box-shadow: inset 0 -3px 0 0 #ebebeb;
+    -moz-box-shadow: inset 0 -3px 0 0 #ebebeb;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: inset 0 -3px 0 0 #ebebeb;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: auto;
+    padding: 5px 7px 5px 7px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: auto;
+    z-index: 1000;
+}
+@media only screen and (max-width: 767px) {
+    .navbar-toggle {
+        display: block;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+.navbar-toggle:hover {
+    border: 1px solid #d2d2d2;
+}
+.navbar-toggle .sr-only {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #b2b2b2;
+    border-bottom: 1px solid #e0e0e0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    height: 3px;
+    margin-bottom: 3px;
+    margin-top: 0;
+    width: 22px;
+}
+
+.mobile-menu-wrapper {
+    position: absolute;
+    top: -66px;
+    -webkit-transition: top 0.5s ease 0s;
+    -moz-transition: top 0.5s ease 0s;
+    -o-transition: top 0.5s ease 0s;
+    transition: top 0.5s ease 0s;
+    visibility: none;
+    width: 100%;
+    z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+    .mobile-menu-wrapper {
+        display: none;
+    }
+}
+
+#mobile-menu li {
+    background: white;
+    border-bottom: 2px solid #ebebeb;
+    border-top: none;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    position: relative;
+}
+#mobile-menu li:last-child {
+    border-bottom: none;
+}
+#mobile-menu li:before {
+    background: #f2ae00;
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 5px;
+}
+#mobile-menu li a {
+    color: #575757;
+    display: block;
+    padding: 15px 12px 15px 15px;
+    text-transform: none;
+}
+#mobile-menu li a:hover {
+    background: white;
+}
+
+#gray-screen {
+    background: black;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    width: 100%;
+    z-index: 100;
+}
+#gray-screen.dark {
+    display: block;
+}
+
+/* all the stuff that happens when clicking the mobile menu button */
+body.js_nav #gray-screen {
+    background: black;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    transition: all 2s ease;
+    width: 100%;
+    z-index: 1;
+}
+body.js_nav .mobile-menu-wrapper {
+    display: block;
+    -webkit-transition: top 0.5s ease 0s;
+    -moz-transition: top 0.5s ease 0s;
+    -o-transition: top 0.5s ease 0s;
+    transition: top 0.5s ease 0s;
+    top: 76px;
+    visibility: visible;
+    z-index: 3;
+}
+
+#menu-mobile {
+    float: right;
+    margin-right: -10px;
+}
+#menu-mobile li {
+    margin: 0;
+}
+
+#menu-mobile-button {
+    background: #fafafa;
+    /* Safari 4+, Chrome 1-9 */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#909090), to(#909090));
+    /* Safari 5.1+, Mobile Safari, Chrome 10+ */
+    background-image: -webkit-linear-gradient(left, #909090, #fafafa 2%, #fafafa 98%, #909090 100%);
+    background-image: -moz-linear-gradient(left center, #909090 0%, #fafafa 2%, #fafafa 98%, #909090 100%);
+    background-image: -ms-linear-gradient(left center, #909090 0%, #fafafa 2%, #fafafa 98%, #909090 100%);
+    background-image: -o-linear-gradient(left center, #909090 0%, #fafafa 2%, #fafafa 98%, #909090 100%);
+    border-bottom: 5px solid #f2ae00;
+    -webkit-box-shadow: inset 0 30px 20px white;
+    -moz-box-shadow: inset 0 30px 20px white;
+    box-shadow: inset 0 30px 20px white;
+    height: 75px;
+    line-height: 75px;
+}
+#menu-mobile-button a {
+    color: #575757;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    height: 56px;
+    line-height: 1.1;
+    padding: 19px 30px 0;
+    text-decoration: none;
+    text-transform: none;
+}
+#menu-mobile-button a span {
+    color: #b3b3b3;
+    font-size: 13px;
+}
+
+#primary-menu-mobile #slide-out-tray {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    z-index: 100;
+}
+#primary-menu-mobile li + li {
+    display: none;
+}
+
+#secondary-menu-mobile li {
+    background: #d2d2d2;
+    color: #5c5c5c;
+    font-size: 16px;
+    padding: 10px;
+}
+#secondary-menu-mobile li a {
+    color: #5c5c5c;
+    display: block;
+    text-decoration: none;
+}
+#secondary-menu-mobile li.second {
+    padding: 0;
+}
+
+#tertiary-menu-mobile li {
+    background: #efefef;
+    border-bottom: 1px solid #d2d2d2;
+    padding: 0;
+}
+#tertiary-menu-mobile li:last-child {
+    border: none;
+}
+#tertiary-menu-mobile li a {
+    padding: 10px 10px 10px 20px;
+}
+#tertiary-menu-mobile li a:hover {
+    background: #f4f4f4;
+}
+#tertiary-menu-mobile li.second {
+    padding: 0;
+}
+
+.no-js #primary-menu-mobile:hover li {
+    display: block;
+}
+
+/* ---------------------------------
+THE 'MY HOME' MENU
+------------------------------------ */
+.my-home-menu {
+    float: right;
+    font-size: 14px;
+    font-family: 'Whitney SSm 4r', 'Whitney SSm A', 'Whitney SSm B', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    position: relative;
+}
+.my-home-menu li {
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+}
+.my-home-menu li:hover {
+    background: #f4f4f5;
+}
+.my-home-menu a {
+    color: #3e4545;
+}
+.my-home-menu > li a {
+    display: block;
+    padding: 20px 15px 16px 15px;
+}
+.my-home-menu .sub-menu {
+    background: #f4f4f5;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    display: none;
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    width: 180px;
+    z-index: 101;
+}
+.my-home-menu .sub-menu li {
+    float: none;
+}
+.my-home-menu .sub-menu li a {
+    padding: 14px 0;
+}
+.my-home-menu .sub-menu li a:hover {
+    text-decoration: underline;
+}
+.my-home-menu > li:hover .sub-menu {
+    display: block;
+}
+
+/* ---------------------------------------------
+THE DESKTOP PRIMARY MENU
+------------------------------------------------ */
+.main-menu-container {
+    border-top: 1px solid #d2d2d2;
+    clear: both;
+    float: none;
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .main-menu-container {
+        border: none;
+        clear: none;
+        float: left;
+        width: auto;
+    }
+}
+
+.main-menu {
+    position: relative;
+}
+.main-menu li {
+    float: left;
+    font-family: 'Whitney SSm 4r', 'Whitney SSm A', 'Whitney SSm B', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1;
+    margin: 0;
+}
+.main-menu li:hover {
+    background: #f4f4f5;
+}
+.main-menu li a {
+    color: #3e4545;
+    display: block;
+    font-size: 12px;
+    padding: 16px 8px;
+}
+.main-menu .sub-menu {
+    background: #f4f4f5;
+    -webkit-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+    display: none;
+    padding-left: 20px;
+    position: absolute;
+    width: 180px;
+    z-index: 101;
+}
+.main-menu .sub-menu li {
+    float: none;
+}
+.main-menu .sub-menu li a {
+    padding: 14px 0;
+}
+.main-menu .sub-menu li a:hover {
+    text-decoration: underline;
+}
+.main-menu .sub-menu li.see-all a {
+    font-family: 'Whitney SSm 6r', 'Whitney SSm A', 'Whitney SSm B', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+    .main-menu li a {
+        font-size: 14px;
+        padding: 20px 15px 16px 15px;
+    }
+    .main-menu > li:hover .sub-menu {
+        display: block;
+    }
+    .main-menu .sub-menu li a {
+        padding: 14px 0 !important;
+    }
+}
+
+/*#main-menu {
+	float: right;
+	li {
+		border-bottom: 5px solid white;
+		@include shadow-inner(0, 30px, 20px, #ffffff);
+		float: left;
+		height: 75px;
+		line-height: 75px;
+		margin: 0;
+		&:hover {
+			background: #fafafa;
+			// Safari 4+, Chrome 1-9
+			background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#909090), to(#909090));
+			// Safari 5.1+, Mobile Safari, Chrome 10+
+			background-image: -webkit-linear-gradient(left, #909090, #FAFAFA 2%, #FAFAFA 98%, #909090 100%);
+			background-image: -moz-linear-gradient(left center , #909090 0%, #FAFAFA 2%, #FAFAFA 98%, #909090 100%);
+			background-image: -ms-linear-gradient(left center , #909090 0%, #FAFAFA 2%, #FAFAFA 98%, #909090 100%);
+			background-image: -o-linear-gradient(left center , #909090 0%, #FAFAFA 2%, #FAFAFA 98%, #909090 100%);
+			border-bottom: 5px solid $gold;
+		}
+		a {
+			color: #575757;
+			display: block;
+			font-size: 16px;
+			font-style: normal;
+			font-weight: 400;
+			height: 56px;
+			line-height: 1.1;
+			padding: 19px 30px 0;
+			text-decoration: none;
+			text-transform: none;
+			span {
+				color: #b3b3b3;
+				font-size: 13px;
+			}
+		}
+	}
+}*/
+#zone-secondary-menu-wrapper {
+    background: #f5f5f5;
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+    display: none;
+    height: 50px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+.banner-top #zone-secondary-menu-wrapper {
+    background: rgba(255, 255, 255, 0.8);
+}
+@media only screen and (min-width: 768px) {
+    #zone-secondary-menu-wrapper {
+        display: block;
+    }
+}
+
+/* ----------------------- the desktop secondary menu ------------------------------- */
+.js #region-secondary-menu {
+    overflow: hidden;
+}
+
+#secondary-menu {
+    font-size: 16px;
+}
+#secondary-menu ul {
+    float: right;
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
+}
+.js #secondary-menu ul {
+    left: 112px;
+}
+#secondary-menu ul li {
+    float: left;
+    font-size: 16px;
+    line-height: 1;
+    margin: 0;
+    padding: 10px 20px;
+}
+#secondary-menu ul li.active {
+    background: #fff;
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+#secondary-menu ul li a {
+    color: #575757;
+}
+#secondary-menu ul li a:hover {
+    text-decoration: underline;
+}
+
+li.secret-button {
+    background: #f95a41;
+    border-bottom: 4px solid;
+    border-color: #B2192D;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Archer 8i','Archer A','Archer B', serif;
+    font-style: italic;
+    font-weight: 800;
+    margin-left: 10px !important;
+    padding: 0 !important;
+}
+li.secret-button a {
+    color: #fff !important;
+    display: block;
+    padding: 10px 15px !important;
+}
+
+.sticky-menu {
+    position: fixed !important;
+    top: 0;
+}
+
+.opaque-menu {
+    background: #f6f6f6 !important;
+}
+
+/* =====================================================================================
+SPECIAL BULLET LISTS WITH ICONS
+====================================================================================== */
+ul.icons {
+    /*
+    &.mono {
+        li {
+            min-height: 32px;
+            &:before {
+                background-image: url('/img/icon-house.png');
+                height: 32px;
+            }
+        }
+    }*/
+}
+ul.icons li {
+    margin-top: 0;
+    min-height: 40px;
+    padding-left: 60px;
+    position: relative;
+}
+ul.icons li:before {
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    content: '';
+    display: block;
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    width: 45px;
+}
+ul.icons li h4 {
+    color: #42acb4;
+    font-family: 'Verlag 4','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+ul.icons li p {
+    margin-top: 0;
+}
+ul.icons li.map-marker:before {
+    background-image: url("http://about.porch.com/about/img/icons/neighborhoodview.png");
+}
+ul.icons li.money-stack:before {
+    background-image: url("http://about.porch.com/about/img/icons/projectcosthistory.png");
+}
+ul.icons li.house-check:before {
+    background-image: url("http://about.porch.com/about/img/icons/personalpreferences.png");
+}
+ul.icons li.lightbulb:before {
+    background-image: url("http://about.porch.com/about/img/icons/expertadvice.png");
+}
+ul.icons li.scrapbook:before {
+    background-image: url("http://about.porch.com/about/img/icons/photosandprojects.png");
+}
+ul.icons li.house-heart:before {
+    background-image: url("http://about.porch.com/about/img/icons/homemanagement.png");
+}
+ul.icons li.coin:before {
+    background-image: url("http://about.porch.com/about/img/icons/ownership.png");
+}
+ul.icons li.thumbs:before {
+    background-image: url("http://about.porch.com/about/img/icons/greatpeople.png");
+}
+ul.icons li.palm-tree:before {
+    background-image: url("http://about.porch.com/about/img/icons/worklifebalance.png");
+}
+ul.icons li.laptop:before {
+    background-image: url("http://about.porch.com/about/img/icons/pcormac.png");
+}
+ul.icons li.bandaid:before {
+    background-image: url("http://about.porch.com/about/img/icons/health.png");
+}
+ul.icons li.apple:before {
+    background-image: url("http://about.porch.com/about/img/icons/snacks.png");
+}
+ul.icons li.hammers:before {
+    background-image: url("http://about.porch.com/about/img/icons/right-pro.png");
+}
+ul.icons li.stats-marker:before {
+    background-image: url("http://about.porch.com/about/img/icons/neighborhood-stats.png");
+}
+ul.icons li.scroll:before {
+    background-image: url("http://about.porch.com/about/img/icons/home-history.png");
+}
+
+ul.normal-bullets ul, .context-job-ad #main ul {
+    padding-bottom: 12px;
+    position: relative;
+}
+ul.normal-bullets ul li, .context-job-ad #main ul li {
+    margin: 8px 0;
+    padding-left: 10px;
+}
+ul.normal-bullets ul li:before, .context-job-ad #main ul li:before {
+    color: #D1D4D3;
+    content: '• ';
+    left: 0;
+    position: absolute;
+}
+
+/* =====================================================================================
+THE TESTIMONIAL QUOTES
+====================================================================================== */
+#zone-testimonials .region {
+    padding-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+    #zone-testimonials .region {
+        padding: 0;
+    }
+}
+
+.bubble-testimonial .inner {
+    padding: 0 20px;
+}
+.bubble-testimonial .quote {
+    border-bottom: 2px solid #e2e1dd;
+    color: #84888b;
+    font-family: 'Archer 5r','Archer A','Archer B', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 24px;
+    padding-bottom: 30px;
+    position: relative;
+}
+.bubble-testimonial .quote:after {
+    background: url("http://about.porch.com/about/img/speechtip.png");
+    background-repeat: no-repeat;
+    background-size: 24px 25px;
+    bottom: -25px;
+    content: '';
+    height: 25px;
+    left: 100px;
+    position: absolute;
+    width: 24px;
+}
+.bubble-testimonial .citation {
+    margin-top: -10px;
+    min-height: 80px;
+    padding-top: 20px;
+    position: relative;
+}
+.bubble-testimonial .citation img {
+    /*border: 1px solid #d3d3d3;
+    @include rounded(50px);*/
+    height: 80px;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    width: 80px;
+}
+.bubble-testimonial .citation .name {
+    color: #b3b3b3;
+    font-family: 'Verlag 4i','Verlag A','Verlag B', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 0 0 110px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.bubble-testimonial .citation .name:before {
+    content: '- ';
+}
+.bubble-testimonial .citation .city {
+    color: #b3b3b3;
+    font-family: 'Verlag 4i','Verlag A','Verlag B', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    margin: 0 0 0 110px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@media only screen and (min-width: 768px) {
+    .box-testimonial {
+        margin-bottom: 0;
+    }
+}
+.box-testimonial .inner {
+    border: 1px solid #d2d2d2;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px;
+    position: relative;
+}
+.box-testimonial .headshot {
+    position: relative;
+}
+.box-testimonial .headshot img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.box-testimonial .headshot .hgroup {
+    bottom: 5px;
+    color: #fff;
+    left: 5px;
+    margin: 0;
+    position: absolute;
+}
+.box-testimonial .headshot .hgroup .company {
+    font-family: 'Verlag 7r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 17px;
+    margin: 0;
+}
+.box-testimonial .headshot .hgroup .city {
+    font-family: 'Verlag 4','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+.box-testimonial .quote {
+    font-family: 'Archer 5r','Archer A','Archer B', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    padding: 0 10px;
+}
+.box-testimonial .citation p {
+    color: #b3b3b3;
+    font-family: 'Verlag 4i','Verlag A','Verlag B', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    margin: 0;
+    text-align: right;
+}
+.box-testimonial .citation .name:before {
+    content: '- ';
+}
+.box-testimonial .link {
+    bottom: 5px;
+    display: none;
+    font-family: 'Archer 8i','Archer A','Archer B', serif;
+    font-style: italic;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    position: absolute;
+}
+.box-testimonial .link a:hover {
+    text-decoration: underline;
+}
+
+/* =====================================================================================
+THE BIG CIRCULAR SOCIAL ICONS
+====================================================================================== */
+.big-social-links h6 {
+    margin-bottom: 20px;
+}
+.big-social-links .social-link {
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    float: left;
+    overflow: hidden;
+    padding: 10px 20px 10px 0;
+}
+.big-social-links .social-link a {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    height: 80px;
+    opacity: 0;
+    width: 80px;
+}
+.big-social-links .social-link.facebook {
+    background-image: url(
+
+    );
+}
+.big-social-links .social-link.twitter {
+    background-image: url("http://about.porch.com/about/img/icon-twitter.png");
+}
+.big-social-links .social-link.pinterest {
+    background-image: url("http://about.porch.com/about/img/icon-pinterest.png");
+}
+.big-social-links .social-link.linked-in {
+    background-image: url("http://about.porch.com/about/img/icon-linkedin.png");
+}
+.big-social-links .social-link.google-plus {
+    background-image: url("http://about.porch.com/about/img/icon-googleplus.png");
+}
+
+.bigger-social-links {
+    display: inline-block;
+    margin: 0 auto;
+}
+.bigger-social-links .social-link {
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    float: left;
+    overflow: hidden;
+    padding: 10px 20px 10px 0;
+}
+.bigger-social-links .social-link a {
+    color: rgba(0, 0, 0, 0);
+    display: block;
+    height: 80px;
+    opacity: 0;
+    width: 80px;
+}
+.bigger-social-links .social-link.facebook {
+    background-image: url("http://about.porch.com/about/img/icon-facebook.png");
+}
+.bigger-social-links .social-link.twitter {
+    background-image: url("http://about.porch.com/about/img/icon-twitter.png");
+}
+.bigger-social-links .social-link.pinterest {
+    background-image: url("http://about.porch.com/about/img/icon-pinterest.png");
+}
+.bigger-social-links .social-link.linked-in {
+    background-image: url("http://about.porch.com/about/img/icon-linkedin.png");
+}
+.bigger-social-links .social-link.google-plus {
+    background-image: url("http://about.porch.com/about/img/icon-googleplus.png");
+}
+
+/* =====================================================================================
+BUTTON STYLES
+====================================================================================== */
+.button {
+    border-bottom: 4px solid;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    font-family: 'Archer 8i','Archer A','Archer B', serif;
+    font-style: italic;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.button h4 {
+    color: white !important;
+    font-size: 16px;
+    font-style: italic !important;
+    font-weight: 800 !important;
+    margin-bottom: 0;
+    text-shadow: none !important;
+}
+.button h4 a {
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+.red-button {
+    background: #F95A41;
+    border-color: #B2192D;
+}
+
+.red-button:hover {
+    border-color: #f95a41;
+}
+
+.blue-button {
+    background: #3878d8;
+    border-color: #0042BF;
+    margin-bottom: 32px;
+}
+
+.blue-button:hover {
+    border-color: #3878d8;
+}
+
+/* =====================================================================================
+THE OVERVIEW PAGE
+====================================================================================== */
+.context-about-overview .top-banner {
+    background-image: url("http://about.porch.com/about/img/headers/about-mobile1.jpg");
+    padding-bottom: 80px;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .context-about-overview .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/about-mobile2.jpg");
+    }
+}
+@media only screen and (min-width: 768px) {
+    .context-about-overview .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/about-desktop.jpg");
+        padding-bottom: inherit;
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .context-about-overview .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/about-wide.jpg");
+    }
+}
+.context-about-overview #zone-quote-wrapper {
+    padding-top: 0;
+}
+@media only screen and (min-width: 768px) {
+    .context-about-overview #zone-quote-wrapper {
+        padding-top: 20px;
+    }
+}
+
+#pros img {
+    margin-bottom: 40px;
+}
+
+#discover img, #claim img {
+    margin-bottom: 40px;
+}
+#discover .button a, #claim .button a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+#pro-testimonials .three-column-grid .cell {
+    background: white;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #pro-testimonials .three-column-grid .cell {
+        display: inline-block;
+        margin-right: 2%;
+        vertical-align: top;
+        width: 49%;
+    }
+    #pro-testimonials .three-column-grid .cell:nth-child(2n+2) {
+        margin-right: 0;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #pro-testimonials .three-column-grid .cell:last-child {
+        display: none;
+    }
+}
+
+/* =====================================================================================
+THE 'WHO WE ARE' PAGE
+====================================================================================== */
+.context-about-team .top-banner {
+    background-image: url("http://about.porch.com/about/img/headers/team-mobile1.jpg");
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .context-about-team .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/team-mobile2.jpg");
+    }
+}
+@media only screen and (min-width: 768px) {
+    .context-about-team .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/team-desktop.jpg");
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .context-about-team .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/team-wide.jpg");
+    }
+}
+
+#grid-intro .what-we-do-headline {
+    color: #f2ae00;
+    font-family: 'Verlag 2r','Verlag A','Verlag B', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 72px;
+}
+@media only screen and (min-width: 768px) {
+    #grid-intro .what-we-do-headline {
+        font-size: 96px;
+        float: left;
+        margin: 0;
+        text-align: center;
+    }
+}
+#grid-intro #what-we-do {
+    position: relative;
+}
+#grid-intro #what-we-do:before {
+    background: url("http://about.porch.com/about/img/bracket.png");
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    height: 271px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 61px;
+}
+#grid-intro #what-we-do li {
+    margin: 5px 0 5px 81px;
+}
+@media only screen and (min-width: 768px) {
+    #grid-intro #what-we-do li {
+        font-size: 24px;
+    }
+}
+
+#employees .cell {
+    position: relative;
+}
+#employees .cell .hgroup {
+    bottom: 2px;
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), black);
+    /* Opera */
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0), black);
+    /* Webkit (Safari 4+, Chrome 1+) */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(1, black));
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), black);
+    /* IE10 */
+    background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), black);
+    /* W3C */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 25%;
+    position: absolute;
+    width: 100%;
+}
+#employees .cell .hgroup .name {
+    color: white;
+    font-family: 'Verlag 7r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    margin: 0;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #employees .cell .hgroup .name {
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #employees .cell .hgroup .name {
+        font-size: 17px;
+    }
+}
+#employees .cell .hgroup .dept {
+    color: white;
+    display: none;
+    font-family: 'Verlag 4','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+#employees .cell img.front {
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    -webkit-transition: opacity 0.15s ease;
+    -moz-transition: opacity 0.15s ease;
+    -o-transition: opacity 0.15s ease;
+    transition: opacity 0.15s ease;
+}
+#employees .cell img.front:hover {
+    opacity: 0;
+}
+
+/* =====================================================================================
+THE CAREERS PAGE
+====================================================================================== */
+.context-about-careers .top-banner {
+    background-image: url("http://about.porch.com/about/img/headers/careers-mobile1.jpg");
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .context-about-careers .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/careers-mobile2.jpg");
+    }
+}
+@media only screen and (min-width: 768px) {
+    .context-about-careers .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/careers-desktop.jpg");
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .context-about-careers .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/careers-wide.jpg");
+    }
+}
+
+.context-job-ad .more {
+    margin-top: 0;
+}
+.context-job-ad #main h3 {
+    margin-bottom: 20px;
+}
+
+/* =====================================================================================
+THE 'IN THE NEWS' PAGE
+====================================================================================== */
+#news-blurbs {
+    border-left: 2px solid #d1d4d3;
+}
+#news-blurbs .logo-date img {
+    display: none;
+}
+#news-blurbs .logo-date .dateline {
+    color: #b3b3b3;
+    font-family: 'Verlag 8r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-left: 40px;
+}
+#news-blurbs .headline {
+    padding-bottom: 20px;
+    position: relative;
+}
+#news-blurbs .headline:before {
+    background: url("http://about.porch.com/about/img/graybullet.png");
+    content: '';
+    display: block;
+    height: 13px;
+    left: -7px;
+    position: absolute;
+    top: 4px;
+    width: 13px;
+}
+#news-blurbs .headline h4 {
+    color: #575757;
+    padding-left: 40px;
+}
+#news-blurbs .headline h5 {
+    color: #616265;
+    font-family: 'Archer 5r','Archer A','Archer B', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3;
+    padding-left: 40px;
+}
+#news-blurbs .news-blurb:first-child .headline:before {
+    top: 0;
+}
+
+/* =====================================================================================
+THE PRESS PAGES
+====================================================================================== */
+.context-press .top-banner {
+    background-image: url("http://about.porch.com/about/img/headers/press-mobile1.jpg");
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .context-press .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/press-mobile2.jpg");
+    }
+}
+@media only screen and (min-width: 768px) {
+    .context-press .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/press-desktop.jpg");
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .context-press .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/press-wide.jpg");
+    }
+}
+
+#releases .dateline {
+    color: #b3b3b3;
+    font-family: 'Verlag 8r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 10px 0 5px 0;
+}
+#releases .headlines {
+    margin-bottom: 20px;
+}
+#releases .headlines h4 {
+    color: #3878d8;
+    font-family: 'Verlag 3r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.3;
+}
+#releases .headlines h5 {
+    color: #616265;
+    font-family: 'Archer 5r','Archer A','Archer B', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-bottom: 0;
+}
+#releases .more {
+    display: none;
+    margin-bottom: 0;
+}
+
+#assets .grid-section {
+    margin-bottom: 40px;
+}
+#assets .grid-section .cell {
+    margin-bottom: 20px;
+}
+#assets .grid-section .cell p {
+    margin: 0;
+}
+
+#bios h2 {
+    margin-bottom: 40px;
+}
+#bios .bio {
+    padding-bottom: 40px;
+    padding-left: 28%;
+    position: relative;
+}
+#bios .bio h5 {
+    margin-bottom: 0;
+}
+#bios .bio .bio-title {
+    color: #b3b3b3;
+    font-family: 'Verlag 4i','Verlag A','Verlag B', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0;
+}
+#bios .bio img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 25%;
+}
+
+.context-press-release .more {
+    margin-top: 0;
+}
+
+#press-release .dateline {
+    color: #3e4545;
+    font-family: 'Verlag 7r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+#press-release .dateline span {
+    text-transform: uppercase;
+}
+#press-release p:last-child {
+    margin-bottom: 0;
+}
+
+.context-press #summary h3, .context-press .big-social-links h3 {
+    color: #575757;
+    font-family: 'Verlag 3r','Verlag A','Verlag B', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+.context-press #summary p, .context-press .big-social-links p {
+    margin: 0;
+}
+
+/* =====================================================================================
+THE CONTACT PAGE
+====================================================================================== */
+.context-about-contact .top-banner {
+    background-image: url("http://about.porch.com/about/img/headers/contact-mobile1.jpg");
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .context-about-contact .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/contact-mobile2.jpg");
+    }
+}
+@media only screen and (min-width: 768px) {
+    .context-about-contact .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/contact-desktop.jpg");
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .context-about-contact .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/contact-wide.jpg");
+    }
+}
+
+#zone-reach .region-inner div {
+    margin-bottom: 20px;
+}
+#zone-reach h2 {
+    margin-bottom: 20px;
+}
+#zone-reach h6, #zone-reach p {
+    margin: 0;
+}
+
+#zone-care h6 {
+    margin: 20px 0;
+}
+
+/* =====================================================================================
+THE CUSTOMERS PAGE
+====================================================================================== */
+.context-customers .top-banner {
+    background-image: url("http://about.porch.com/about/img/headers/customers-mobile1.jpg");
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .context-customers .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/customers-mobile2.jpg");
+    }
+}
+@media only screen and (min-width: 768px) {
+    .context-customers .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/customers-desktop.jpg");
+    }
+}
+@media only screen and (min-width: 1221px) {
+    .context-customers .top-banner {
+        background-image: url("http://about.porch.com/about/img/headers/customers-wide.jpg");
+    }
+}
+
+#case-studies-video-region {
+    margin-bottom: 40px;
+}
+@media only screen and (min-width: 768px) {
+    #case-studies-video-region {
+        margin-bottom: 60px;
+    }
+}
+
+#case-studies-thumbnails img {
+    margin-bottom: 20px;
+}
+#case-studies-thumbnails p {
+    margin: 0;
+}
+
+/* =====================================================================================
+THE FOOTER
+====================================================================================== */
+#zone-message-footer-wrapper {
+    padding: 40px 0;
+}
+@media only screen and (min-width: 768px) {
+    #zone-message-footer-wrapper {
+        padding: 60px 0;
+    }
+}
+#zone-message-footer-wrapper #message-footer {
+    text-align: center;
+}
+#zone-message-footer-wrapper #message-footer img {
+    height: 48px;
+    width: 48px;
+}
+#zone-message-footer-wrapper #message-footer h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+#zone-social-footer-wrapper {
+    background: #ececec;
+    border-bottom: 2px solid #fff;
+    padding: 0;
+}
+
+#social-footer ul {
+    float: right;
+}
+#social-footer ul li {
+    background-position: 10px 8px;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    float: left;
+    margin: 0;
+    overflow: hidden;
+    padding: 5px;
+}
+@media only screen and (min-width: 768px) {
+    #social-footer ul li {
+        background-size: 32px 32px;
+        background-position: 10px 10px;
+        padding: 10px;
+    }
+}
+#social-footer ul li a {
+    display: block;
+    height: 32px;
+    opacity: 0;
+    width: 32px;
+}
+#social-footer ul li.first {
+    background-image: url("/images/GitHub-Mark-32px.png");
+}
+#social-footer ul li.second {
+    background-image: url("http://about.porch.com/about/img/facebooklogo.png");
+}
+#social-footer ul li.third {
+    background-image: url("http://about.porch.com/about/img/twitterlogo.png");
+}
+#social-footer ul li.fourth {
+    background-image: url("http://about.porch.com/about/img/pinterestlogo.png");
+}
+#social-footer ul li.fifth {
+    background-image: url("http://about.porch.com/about/img/icon-linkedin.png");
+}
+#social-footer ul li.sixth {
+    background-image: url("http://about.porch.com/about/img/icon-googleplus.png");
+}
+
+#zone-footer-menu-wrapper {
+    background: #f6f6f6;
+    border-top: 2px solid #ececec;
+    padding: 20px 0;
+    /*#region-footer-menu {
+        margin-bottom: 30px;
+    }*/
+}
+#zone-footer-menu-wrapper #region-footer-menu {
+    text-align: center;
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #zone-footer-menu-wrapper #region-footer-menu {
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #zone-footer-menu-wrapper #region-footer-menu {
+        text-align: left;
+    }
+}
+#zone-footer-menu-wrapper #region-footer-menu li {
+    float: left;
+    font-size: 13px;
+    margin: 20px 10px 0 0;
+}
+#zone-footer-menu-wrapper a {
+    color: #575757;
+}
+
+/* =====================================================================================
+SIMPLE USER CLASSES
+====================================================================================== */
+/* -----------------------------------------------------------------------------
+* EASY USER STYLE CLASSES
+--------------------------------------------------------------------------------
+*/
+.gray-background {
+    background: #f6f6f6;
+}
+
+.yellow-background {
+    background: #FFE692;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.desktop-only {
+    display: none;
+}

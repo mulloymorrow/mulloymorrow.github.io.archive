@@ -1,1 +1,0 @@
-console.log("Hello, developer, welcome to Porch! We're always looking for inquisitive minds to join our team. Feel free to apply at http://porch.com/about/careers/");

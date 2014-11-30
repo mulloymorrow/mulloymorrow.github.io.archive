@@ -7,4 +7,6 @@ tags: [R, library, bayesian, statistics, machine learning]
 author: Mulloy Morrow
 ---
 
-http://google.github.io/CausalImpact/
+Great Library
+[Causal Impact](http://google.github.io/CausalImpact/)
+

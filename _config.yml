@@ -3,7 +3,7 @@ defaults:
     scope:
       path: ""
     values:
-      title: dward.io
+      title: mulloy morrow
       splash: true
       layout: default
       indent: "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"

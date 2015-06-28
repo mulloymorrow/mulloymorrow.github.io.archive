@@ -4,7 +4,7 @@ title: Activity Outliers
 description: Project Outlier detection using geohash-binning and density estimation.   
 category: "DataScience"
 tags: [geospatial, statistics, data science]
-author: Mulloy Morrow
+author: M
 ---
 
 <iframe width="500" height="300" scrolling="no" frameborder="no" src="https://www.google.com/fusiontables/embedviz?q=select+col2+from+19ZelMBAHSGifb8B_kroP7BUXRN0PWzZEqXlc3PJr&amp;viz=MAP&amp;h=false&amp;lat=45.08591740412464&amp;lng=-92.90794363281249&amp;t=1&amp;z=7&amp;l=col2&amp;y=2&amp;tmplt=2&amp;hml=GEOCODABLE"></iframe>

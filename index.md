@@ -7,12 +7,14 @@ splash: true
 
 -------------
 
-Bloggin it up on Data Science, Machine Learning, and Engineering. 
+I'm interested in Data Science, Machine Learning, and Software Engineering. If you'd like to chat please get in contact, see footer. 
 
-- [Porch Engineering Blog](http://engineering.porch.com/)
+
+- [Projects](pages/projects/)
 - [My GitHub](https://github.com/mulloymorrow)
-- [Playground](http://mulloymorrow.github.io/playground/)
+- [Porch Engineering Blog](http://engineering.porch.com/)
 
+ 
 -------------
 
 

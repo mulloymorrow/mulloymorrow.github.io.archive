@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>legend.kml</name>
+        <ScreenOverlay>
+            <name>Postal Code Legend</name>
+            <drawOrder>0</drawOrder>
+            <Icon>
+                <href>https://s3-us-west-2.amazonaws.com/porch-public/HZubEKcgP5p4Dt9VwS9BStTp3Zak7qd8mAntDjBtH4hyGRaMXk49rXHr7yEbXmuGFvxWZyty/ServiceAreaLegend2.png</href>
+                <refreshInterval>0.0</refreshInterval>
+                <viewRefreshTime>0.0</viewRefreshTime>
+                <viewBoundScale>0.0</viewBoundScale>
+            </Icon>
+            <overlayXY x="0.0" y="0.0" xunits="fraction" yunits="fraction"/>
+            <screenXY x="25.0" y="125.0" xunits="pixels" yunits="pixels"/>
+            <rotationXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/>
+            <size x="0.0" y="0.0" xunits="pixels" yunits="pixels"/>
+            <rotation>0.0</rotation>
+        </ScreenOverlay>
+    </Document>
+</kml>

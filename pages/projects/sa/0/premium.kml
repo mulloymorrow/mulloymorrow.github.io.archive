@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:xal="urn:oasis:names:tc:ciq:xsdschema:xAL:2.0">
+    <Document>
+        <name>10825829_premium.kml</name>
+        <Style id="polygonRed">
+            <PolyStyle>
+                <color>801400FF</color>
+            </PolyStyle>
+        </Style>
+        <Style id="polygonYellow">
+            <PolyStyle>
+                <color>8014F0FF</color>
+            </PolyStyle>
+        </Style>
+        <Style id="polygonOrange">
+            <PolyStyle>
+                <color>801478FF</color>
+            </PolyStyle>
+        </Style>
+        <Style id="polygonGray">
+            <PolyStyle>
+                <color>80787d7d</color>
+            </PolyStyle>
+        </Style>
+        <Style id="polygonLightBlue">
+            <PolyStyle>
+                <color>00FF0000</color>
+            </PolyStyle>
+        </Style>
+        <Style id="polygonLightGreen">
+            <PolyStyle>
+                <color>1A14F000</color>
+            </PolyStyle>
+        </Style>
+        <Style id="lineRed">
+            <LineStyle>
+                <color>801400FF</color>
+                <width>0.1</width>
+            </LineStyle>
+        </Style>
+        <Style id="lineRed">
+            <LineStyle>
+                <color>B314F000</color>
+                <width>0.1</width>
+            </LineStyle>
+        </Style>
+        <StyleMap id="mapStyleCompanyLocation">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#polygonRed</styleUrl>
+            </Pair>
+        </StyleMap>
+        <StyleMap id="mapStyleCBSA">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#polygonLightGreen</styleUrl>
+            </Pair>
+        </StyleMap>
+        <StyleMap id="mapStyleZipInliers">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#polygonOrange</styleUrl>
+            </Pair>
+        </StyleMap>
+        <StyleMap id="mapStyleZipOutliers">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#polygonGray</styleUrl>
+            </Pair>
+        </StyleMap>
+        <StyleMap id="mapStyleZipPremium">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#none</styleUrl>
+            </Pair>
+        </StyleMap>
+        <StyleMap id="mapStyleZipAddendum">
+            <Pair>
+                <key>normal</key>
+                <styleUrl>#polygonYellow</styleUrl>
+            </Pair>
+        </StyleMap>
+    </Document>
+</kml>

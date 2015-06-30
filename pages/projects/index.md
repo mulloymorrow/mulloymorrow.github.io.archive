@@ -15,10 +15,11 @@ Contents
 -------------
 
 #### <a name="sa"> Service Area
+Using Kafka to broker upserts in master-record management is awesome. Hijacking this signal to perform incremental model refreshes is even better! Assuming each Kafka topic represents a model's feature set, aggregations and model training can be triggered by upstream events. Here I briefly discuss one such use-case applied to geospatial events. 
 
 <iframe src="https://docs.google.com/presentation/d/1fYjMpHnrKZzw7v-Bqyz1W5-OSns0JywHloqOolUZ7Ak/embed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-e.g.[cleaner](sa/0/index.html)
+Interactive Map Example: [Home Cleaner](sa/0/index.html)
 
 -------------
 

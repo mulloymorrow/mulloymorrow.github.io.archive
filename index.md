@@ -7,7 +7,7 @@ splash: true
 
 -------------
 
-I'm interested in Data Science, Machine Learning, and Software Engineering. If you'd like to chat please get in contact, see footer. 
+I'm interested in Amplified Intelligence via Data Visualizations, Data Science, Machine Learning, and Software Engineering. If you'd like to chat please get in contact, see footer. 
 
 
 - [Projects](pages/projects/)

@@ -1,3 +1,6 @@
+#markdown: kramdown
+markdown: redcarpet
+
 defaults:
   -
     scope:
